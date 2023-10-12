@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>TeleMedicine login</title>
+</head>
+<body>
+        <div class="whole-container">
+        <div class="header">
+            <p>FAQs</p>
+            <p>Help</p> 
+            <p>Support</p>
+            <div class="icons" style="float:right;">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                </div>
+        </div>
+        <nav id="main-nav-wrap">
+            <label><img src="./img/detailed-women.svg" alt="">
+               <div> 
+                <h3>ECarePro</h3>
+                <p>Services</p>
+            </div>
+            </label>
+            <div class="nav-links" Id="checkmenu">
+                <ul>
+                        <i class="fa fa-times" onclick ="hideMenu()"></i>          
+                    <li class="current"><a href="index.html" class="smoothscroll">Home</a></li>
+                    <li><a href="#about" class="smoothscroll">About</a></li>
+                    <li><a href="#services" class="smoothscroll">Services</a></li>
+                    <li><a href="#gallery" class="smoothscroll">Gallery</a></li>
+                        <li><a href="#contact" class="smoothscroll">Contact</a></li>
+                        <div class="dropdown2">
+                            <li><a href="#contact" class="smoothscroll">More<span><i class="fa-solid fa-angle-down"></i></span></a></li>
+                            <div class="dropdown2-content">
+                            <li><a href="#appointment" class="smoothscroll">Appointment</a></li>
+                            <li><a href="#department" class="smoothscroll">Department</a></li>
+                            <li><a href="#doctors" class="smoothscroll">Doctors</a></li>
+                            </div>
+                            </div>
+                        <button class="register"><a href="./register.html">Register</a></button>
+                </ul>
+                </div>
+                <div class="nav-icons">
+                    <a href=""><img src="./img/Vector 7.svg" alt=""></a>
+                    <a href="cart2.html"><img src="./img/Vector (3).svg" alt="" style=" border:none;">
+                      <!-- <span class="shopping-cart">0</span> -->
+                    </a>
+                  </div>
+            <i class="fa fa-bars" onclick ="showMenu()"></i>
+        </nav>
+    </div>
+    </div>
+
+<div class="registrationContainer">
+    <form id="signup" class="form">
+        <h1>LOGIN</h1>
+        <div class="form-field">
+            <!-- <label for="username">Username:</label> -->
+            <input type="text" name="username" id="username" placeholder="Username" autocomplete="on">
+            <small></small>
+        </div>
+
+        <div class="form-field password">
+            <!-- <label for="password">Password:</label> -->
+            <input type="password" name="password" id="password" placeholder="Password" autocomplete="on">
+            <div class="eye">
+            <i class="fa-regular fa-eye" id="seePassword"></i>
+        </div>
+                  <small></small>
+        </div>
+
+        <!-- <div class="flex">
+          <input type="checkbox" /> <p>Remember Password</p><br>
+         </div> -->
+        <div class="form-field submit">
+          <button type="submit" class="rgnBtn">Login</button>
+        </div>
+        <p>New to TeleMedicine? <a href="./register.html"> Create an account</a></p>
+    </form>
+</div>
+
+<section class="footer">
+    <div class="footer-row">
+        <h2>ECarePro</h2>
+        <p>Opposite Ikon Allah Plaza, Tunga <br> Minna Niger State</p>
+        <p><span>Email:</span>mziyyah010@gmail.com</p>
+        <p><span>Phone:</span>07035106062</p>
+    </div>
+    <div class="footer-row">
+        <h2>Quick Links</h2>
+        <ul>     
+        <li class="current"><a href="#intro" class="smoothscroll">Home</a></li>
+        <li><a href="#about" class="smoothscroll">About</a></li>
+        <li><a href="#services" class="smoothscroll">Services</a></li>
+        <li><a href="#contact" class="smoothscroll">Contact</a></li>
+        <li><a href="./register.html">Register</a></li>
+    </ul>
+    </div>
+    <div class="footer-row">
+        <h2>Subscribe to Our Newsletter</h2>
+        <input type="text" name="email" placeholder="Your Email"><br>
+        <button class="rgnBtn">Subscribe</button>
+        </div>
+</section>
+
+    <script src="./js/login.js"></script>
+</body>
+</html>

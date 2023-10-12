@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>TeleMedicine Registeration</title>
+</head>
+<body>
+        <div class="header">
+            <p>FAQs</p>
+            <p>Help</p> 
+            <p>Support</p>
+            <div class="icons" style="float:right;">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                </div>
+        </div>
+        <nav id="main-nav-wrap">
+            <label><img src="./img/detailed-women.svg" alt="">
+               <div> 
+                <h3>ECarePro</h3>
+                <p>Services</p>
+            </div>
+            </label>
+            <div class="nav-links" Id="checkmenu">
+                <ul>
+                        <i class="fa fa-times" onclick ="hideMenu()"></i>          
+                    <li class="current"><a href="index.html" class="smoothscroll">Home</a></li>
+                    <li><a href="#about" class="smoothscroll">About</a></li>
+                    <li><a href="#services" class="smoothscroll">Services</a></li>
+                    <li><a href="#gallery" class="smoothscroll">Gallery</a></li>
+                        <li><a href="#contact" class="smoothscroll">Contact</a></li>
+                        <div class="dropdown2">
+                            <li><a href="#contact" class="smoothscroll">More<span><i class="fa-solid fa-angle-down"></i></span></a></li>
+                            <div class="dropdown2-content">
+                            <li><a href="#appointment" class="smoothscroll">Appointment</a></li>
+                            <li><a href="#department" class="smoothscroll">Department</a></li>
+                            <li><a href="#doctors" class="smoothscroll">Doctors</a></li>
+                            </div>
+                            </div>
+                        <button class="register"><a href="./register.html">Register</a></button>
+                </ul>
+                </div>
+                <div class="nav-icons">
+                    <a href=""><img src="./img/Vector 7.svg" alt=""></a>
+                    <a href="cart2.html"><img src="./img/Vector (3).svg" alt="" style=" border:none;">
+                      <!-- <span class="shopping-cart">0</span> -->
+                    </a>
+                  </div>
+            <i class="fa fa-bars" onclick ="showMenu()"></i>
+        </nav>
+    </div>
+
+    <div class="registrationContainer">
+        <form id="signup" class="form">
+            <h1>Sign Up</h1>
+        <div class="form-field">
+                <!-- <label for="username">Username:</label> -->
+                <input type="text" name="fullName" id="fullName" placeholder="Full Name" autocomplete="on">
+                <small></small>
+            </div>
+            <div class="form-field">
+                <!-- <label for="phone">phone:</label> -->
+                <input type="tel" name="phone" id="phone" placeholder="Phone Number" autocomplete="on">
+                <small></small>
+            </div>
+    
+            <div class="form-field">
+                <!-- <label for="email">Email:</label> -->
+                <input type="email" name="email" id="email" placeholder="Email address" autocomplete="on">
+                <small></small>
+            </div>
+    
+            <div class="form-field password">
+                <!-- <label for="password">Password:</label> -->
+                <input type="password" name="password" id="password" placeholder="Password" autocomplete="on">
+                <div class="eye">
+                <i class="fa-regular fa-eye" id="seePassword"></i>
+            </div>
+                      <small></small>
+            </div>
+            <div class="form-field">
+                <!-- <label for="username">Username:</label> -->
+                <input type="text" name="gender" id="gender" placeholder="Gender" autocomplete="on">
+                <small></small>
+            </div>
+            <div class="flex">
+              <input type="checkbox" /> <p> By signing up you accept the terms of service and privacy policy</p><br>
+             </div>
+            <div class="form-field submit">
+              <button type="submit" class="rgnBtn">Sign Up</button>
+            </div>
+            <p>Already have an account? <a href="./login.html"> Sign In</a></p>
+        </form>
+    </div>
+
+        <div class="popup" id="popup">
+            <h2>Congratulations!</h2>
+            <p>Your details has been successfully submitted. Thanks!</p>
+            <button type="button" onclick="hidePopup()">Okay</button>
+        </div>
+    
+        <section class="footer">
+            <div class="footer-row">
+                <h2>ECarePro</h2>
+                <p>Opposite Ikon Allah Plaza, Tunga <br> Minna Niger State</p>
+                <p><span>Email:</span>mziyyah010@gmail.com</p>
+                <p><span>Phone:</span>07035106062</p>
+            </div>
+            <div class="footer-row">
+                <h2>Quick Links</h2>
+                <ul>     
+                <li class="current"><a href="#intro" class="smoothscroll">Home</a></li>
+                <li><a href="#about" class="smoothscroll">About</a></li>
+                <li><a href="#services" class="smoothscroll">Services</a></li>
+                <li><a href="#contact" class="smoothscroll">Contact</a></li>
+                <li><a href="./register.html">Register</a></li>
+            </ul>
+            </div>
+            <div class="footer-row">
+                <h2>Subscribe to Our Newsletter</h2>
+                <input type="text" name="email" placeholder="Your Email"><br>
+                <button class="rgnBtn">Subscribe</button>
+                </div>
+        </section>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>
