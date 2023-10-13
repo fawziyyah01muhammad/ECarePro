@@ -2,8 +2,14 @@
     margin: 0;
     padding: 0;
 }
+a{
+    text-decoration: none;
+}
 button{
     cursor: pointer;
+}
+p{
+    font-family: 'Fraunces';
 }
 .whole-container{
     position: sticky;
@@ -41,10 +47,23 @@ nav{
     border-bottom: 2px solid rgba(249, 247, 247, 0.692);
 
 }
-.nav-icons img{
-    padding:0  0 9px 15px;
-    margin-left: 10px;
-    margin-top: 15px;
+.nav-icons a span{
+    background-color: whitesmoke;
+    padding:5px 8px;
+    border-radius: 50%;
+    color: black;
+    font-size: 10px;
+    font-weight: 700;
+   position: relative;
+   top: -15px;
+   left: -18px;
+
+}
+.nav-icons i{
+    padding:0 0 9px 15px;
+    margin:15px 10px;
+    font-size: 25px;
+    color: rgb(5, 132, 182);
 }
 label{
     display: flex;
@@ -217,7 +236,7 @@ nav .fa{
         cursor: pointer;
     }
     .nav-links{
-        position:absolute;
+        position:fixed;
         background:#edf1ff;
         height: 100vh;
         width:40vw;
@@ -239,7 +258,7 @@ nav .fa{
     .nav-links button{
         padding: 20px 25px;
         display: block;
-        margin:30px 0 0 0;
+        margin:30px auto;
     }
     .nav-links button a{
         font-size: 20px;
@@ -250,7 +269,7 @@ nav .fa{
                 /* section 1 the hero section  */
 
 .sec1{
-    background: linear-gradient(rgb(0,0,0,0.5), rgb(0,0,0,0.5)), url(../img/hero-bg.jpg);
+    background: linear-gradient(rgb(0,0,0,0.5), rgb(0,0,0,0.5)), url(../img/hero\ img3.jpg);
     width: 100%;
     height: 80vh;
     background-repeat: no-repeat;
@@ -269,7 +288,7 @@ nav .fa{
    padding: 5px 0;
 }
 .sec1 p{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Times New Roman', Times, serif; */
     font-size: 15px;
 }
 .button{
@@ -282,6 +301,39 @@ nav .fa{
     border-radius: 7px;
 }
 
+@media screen and (min-width:270px) and (max-width:500px){
+    .sec1{
+        height: 100%;
+    }
+    .sec1 h1{
+        font-size: 25px;
+     }
+     .sec1 p{
+        font-size: 13px;
+     }
+     .sec1-text{
+        padding:50px 25px;
+        width: 50%;
+    }
+    .button{
+        width: 50%;
+     }
+}
+
+@media screen and (min-width:501px) and (max-width:970px){
+    .sec1{
+        height: 100%;
+    }
+    .sec1 h1{
+        font-size: 30px;
+     }
+     .sec1 p{
+        font-size: 13px;
+     }
+     .button{
+        width: 50%;
+     }
+}
 
 
             /* Section 2 The About Section*/
@@ -317,7 +369,55 @@ nav .fa{
 }
 
 .sec2-text p{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding:0 10px 0 0;
+}
+
+@media screen and (min-width:270px) and (max-width:500px){
+    .sec2{
+        padding:50px 20px;
+        padding-left: 0;
+    }
+    .sec2-col{
+        flex-direction: column-reverse;
+        box-shadow: none;
+     }
+     .sec2-text h2{
+        font-size:25px;
+    }
+    .sec2-row img{
+        width:90%;
+        margin:10px 30px;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:970px){
+    .sec2{
+         padding: 100px 20px;
+    }
+    .sec2 h1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 50px;
+        padding: 10px 0;
+    }
+    .sec2-col{
+       flex-direction: column-reverse;
+       box-shadow: none;
+    }
+    .sec2-text h2{
+        font-size:25px;
+    }
+    .sec2-text{
+        padding: 10px;
+    }
+    .sec2-text p{
+        padding-right: 20px;
+    }
+    .sec2-row img{
+        width:100%;
+    }
+    .sec2 .button{
+    width: 50%;
+     }
 }
 
 
@@ -370,6 +470,21 @@ font-size: 25px;
 box-shadow:10px 10px 0 0 rgb(5, 132, 182);
 }
 
+@media screen and (min-width:270px) and (max-width:500px){
+    .sec3-col{
+        flex-direction: column;
+     }
+     .sec3{
+        padding:50px 30px;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:970px){
+    .sec3-col{
+       flex-direction: column;
+        justify-content: space-between;
+    }
+}
 
 .sec4{
     text-align: center;
@@ -448,6 +563,38 @@ box-shadow:10px 10px 0 0 rgb(5, 132, 182);
     margin: 0;
   } */
 
+  @media screen and (min-width:270px) and (max-width:500px){
+    .sec4{
+        text-align: center;
+        padding:30px 20px;
+    }
+    .sec4 h1{
+        font-size: 30px;
+        padding: 20px 0;
+    }
+    .sec4 form input{
+        width: 90%;
+        }
+        .sec4 form input[type=tel]{
+        width: 90%;
+        }
+        .sec4 form select{
+            width: 97%;
+        }
+  }
+
+  @media screen and (min-width:500px) and (max-width:970px){
+        .sec4 form input{
+    width: 45%;
+    }
+    .sec4 form input[type=tel]{
+    width: 45%;
+    }
+    .sec4 form select{
+        width: 48%;
+    }
+}
+
 
                         /*         SECTION 5 THE DEPARTMENT SECTION             */
 
@@ -498,12 +645,12 @@ box-shadow:10px 10px 0 0 rgb(5, 132, 182);
 	display:block;
 	padding: 20px 12px;
 	position: relative;
-	margin-top:30px;
+	margin-top:10px;
 
 }
 .dpt-col-links ul li a{
 	color:black;
-	padding: 13px 20px;
+	padding: 10px 17px;
 	text-decoration: none;
     border: 1px solid black;
 	background-color:transparent;
@@ -512,7 +659,7 @@ box-shadow:10px 10px 0 0 rgb(5, 132, 182);
 }
 .dpt-col-links ul li a.choosen{
 	color:rgb(5, 132, 182);
-	padding: 13px 20px;
+	padding: 10px 17px;
 	background-color:transparent;
 	text-decoration: none;
 	border-radius: 50%;
@@ -535,219 +682,358 @@ box-shadow:10px 10px 0 0 rgb(5, 132, 182);
 	}
 	.dpt-col img{
 		width: 80%;
-		height: 90%;
+		height: 70%;
 		margin-top: 25px;
 		margin-left: 85px;
 	}
 
+    @media screen and (min-width:270px) and (max-width:500px){
+        .sec5{
+            text-align: center;
+            padding:50px 10px;
+            }
+        .dpt{
+            flex-direction: column;
+             justify-content: space-between;
+         }
+         .dpt-col{
+            margin-left: 10px;
+            margin: 0;
+        }
+        .dpt-col p{
+            color:rgb(36, 13, 13);
+          padding:0 10px 0 0;
+          font-size: 14px;
+        }
+        .dpt-col-col2{
+            padding: 0 0 0 15px;
+            text-align: left;
+        }
+        .dpt-col-links ul li{
+            padding: 20px 2px;
+        
+        }
+        .dpt-col img{
+            margin-left: 15px;
+        }
+    }
+
+    @media screen and (min-width:500px) and (max-width:970px){
+        .dpt{
+            flex-direction: column;
+             justify-content: space-between;
+         }
+         .dpt-col{
+            margin-left: 10px;
+            width: 90%;
+        }
+        .dpt-col img{
+            width: 100%;
+            height: 70%;
+            margin-top: 25px;
+            margin-left: 25px;
+        }
+    }
 
 
+                /*  Section 6 The Doctors  Section  */
 
-                /*  Section 3 The Services Section  */
+                    .sec6{
+                        padding:100px 70px;
+                        text-align: center;
+                        box-shadow: 20px 0 20px 0 whitesmoke;
+                    }
+                    .sec6 h1{
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        font-size: 50px;
+                        color: rgb(5, 132, 182);
+                        padding: 30px 0;
+                    }
+                    .sec6-col{
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    .sec6-row{
+                        flex-basis: 43%;
+                        background-color:transparent;
+                        padding: 50px 20px;
+                        border-radius: 10px;
+                        justify-content: center;
+                        box-shadow: 20px 20px 20px 20px whitesmoke;
+                        margin: 20px 0;
+                        display: flex;
+                        text-align: left;
+                        gap: 20px;
+                    }
+                    .sec6-col h3{
+                        padding: 10px 0;
+                        font-size: 25px;
+                        font-family: 'Times New Roman', Times, serif;
+                    }
+                    .sec6-row .icon{
+                        display: flex;
+                    }
+                    .sec6-row .icon i{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background-color:rgb(5, 132, 182);
+                    justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    color: white;
+                    margin: 10px 8px 10px 0;
+                    font-size: 20px;
+                    box-shadow:4px 4px 0 0 rgba(5, 132, 182, 0.558);
+                    }
+                    .sec6-row2 img{
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 50%;
+                    }
 
-                .sec6{
+                    @media screen and (min-width:270px) and (max-width:500px){
+                        .sec6{
+                            padding:50px 20px;
+                        }
+                        .sec6-col{
+                            flex-direction: column;
+                            justify-content: space-between;
+                        }
+                        .sec6-row2 img{
+                            width: 80px;
+                            height: 80px;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    @media screen and (min-width:500px) and (max-width:970px){
+                        .sec6-col{
+                        flex-direction: column;
+                            justify-content: space-between;
+                        }
+                    }
+
+                /*  Section 7 The Contact Section  */
+
+                .sec7{
                     padding:100px 70px;
                     text-align: center;
                     box-shadow: 20px 0 20px 0 whitesmoke;
                 }
-                .sec6 h1{
+                .sec7 h1{
                     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                     font-size: 50px;
                     color: rgb(5, 132, 182);
                     padding: 30px 0;
                 }
-                .sec6-col{
+                .sec7-col{
                     display: flex;
                     justify-content: space-between;
+                    padding: 30px 0;
                 }
-                .sec6-row{
-                    flex-basis: 43%;
-                    background-color:transparent;
-                    padding: 50px 20px;
-                    border-radius: 10px;
-                    justify-content: center;
-                    box-shadow: 20px 20px 20px 20px whitesmoke;
-                    margin: 20px 0;
+                .sec7-row{
+                    flex-basis: 24%;
+                }
+                .sec7-row img{
+                    width: 100%;
+                }
+
+                @media screen and (min-width:270px) and (max-width:500px){
+                    .sec7{
+                        padding:50px 20px;
+                        text-align: center;
+                        box-shadow: 20px 0 20px 0 whitesmoke;
+                    }
+                    .sec7-row{
+                        margin: 10px 0;
+                    }
+                    .sec7-col{
+                        flex-direction: column;
+                        padding:50px 20px;
+                    }
+                }
+
+                @media screen and (min-width:500px) and (max-width:970px){
+                    .sec7-row{
+                        margin: 10px 0;
+                    }
+                .sec7-col{
+                    flex-direction: column;
+                    padding:50px 20px;
+                }
+
+            }
+                .contact{
+                    padding:100px 50px;
+                    box-shadow: 20px 0 20px 0 whitesmoke;
+                }
+                .contact h1{
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-size: 50px;
+                    color: rgb(5, 132, 182);
+                    padding: 30px 0;
+                    text-align: center;
+                }
+                .contact-col{
                     display: flex;
-                    text-align: left;
-                    gap: 20px;
+                    gap: 50px;
+                    justify-content: space-evenly;
                 }
-                /* .sec6-row:hover{
-                    box-shadow:30px 0 30px 0 rgb(240, 239, 239);
-                } */
-                .sec6-col h3{
-                    padding: 10px 0;
-                    font-size: 25px;
-                    font-family: 'Times New Roman', Times, serif;
-                }
-                .sec6-row .icon{
+                .address{
                     display: flex;
+                    padding: 20px 0;
+                    gap: 10px;
                 }
-                .sec6-row .icon i{
-                width: 30px;
-                height: 30px;
-                border-radius: 50%;
-                background-color:rgb(5, 132, 182);
-                justify-content: center;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                color: white;
-                margin: 10px 8px 10px 0;
-                font-size: 20px;
-                box-shadow:4px 4px 0 0 rgba(5, 132, 182, 0.558);
-                }
-                .sec6-row2 img{
-                    width: 150px;
-                    height: 150px;
+                .address i{
+                    background-color:rgb(5, 132, 182);
+                    width: 50px;
+                    height: 50px;
                     border-radius: 50%;
+                    align-items: center;
+                    text-align: center;
+                    font-size: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    color: white;
+                }
+                .address h4{
+                    color: rgb(5, 132, 182);
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-size: 25px;
+                }
+                .address p{
+                    font-size: 15px;
+                }
+                .contact-col form input[type=text]{
+                    width: 25vw;
+                    height: 20px;
+                    padding: 10px 5px;
+                    margin: 5px 0;
+                }
+                .contact-col form input[name=subject], textarea{
+                    width: 98%;
                 }
 
-             /*  Section 7 The Contact Section  */
+                @media screen and (min-width:270px) and (max-width:500px){
+                    .contact{
+                        padding:50px 20px;
+                        box-shadow: 20px 0 20px 0 whitesmoke;
+                    }
+                    .contact-col{
+                        flex-direction: column;
+                        gap: 50px;
+                        justify-content: space-evenly;
+                    }
+                    .address h4{
+                        font-size: 30px;
+                    }
+                    .address p{
+                        font-size: 20px;
+                        padding: 10px 0;
+                    }
+                    .contact-col form input[type=text]{
+                    border: 2px solid lightgrey;
+                    margin: 5px 0;
+                    width: 40vw;
+                    }
+                    .contact-col form input[name=subject], textarea{
+                        border: 2px solid lightgrey;
+                        margin: 5px 0;
+                        width: 93%;
+                    }
+                }
 
-             .sec7{
-                padding:100px 70px;
-                text-align: center;
-                box-shadow: 20px 0 20px 0 whitesmoke;
-            }
-            .sec7 h1{
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                font-size: 50px;
-                color: rgb(5, 132, 182);
-                padding: 30px 0;
-            }
-            .sec7-col{
-                display: flex;
-                justify-content: space-between;
-            }
-            .sec7-row{
-                flex-basis: 24%;
-            }
-            .sec7-row img{
-                width: 100%;
-            }
+                @media screen and (min-width:500px) and (max-width:970px){
+                    
+                    .contact-col{
+                        flex-direction: column;
+                        gap: 50px;
+                        justify-content: space-evenly;
+                    }
+                    .address h4{
+                        font-size: 40px;
+                    }
+                    .address p{
+                        font-size: 25px;
+                        padding: 10px 0;
+                    }
+                    .contact-col form input[type=text]{
+                    border: 2px solid lightgrey;
+                    margin: 5px 0;
+                    width: 40vw;
+                    }
+                    .contact-col form input[name=subject], textarea{
+                        border: 2px solid lightgrey;
+                        margin: 5px 0;
+                        width: 93%;
+                    }
+                }
 
+                .footer{
+                    display: flex;
+                    padding: 50px;
+                    background-color: whitesmoke;
+                }
+                .footer-row{
+                    flex-basis: 31%;
+                }
+                .footer-row h2{
+                    font-size: 25px;
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                }
+                .footer-row ul li{
+                    /* list-style: none; */
+                    padding: 5px;
+                }
+                .footer-row p{
+                padding: 10px 0;
+                }
+                .footer-row p span{
+                    font-style: bold;
+                    font-weight: 700;
+                }
+                .footer-row ul li a{
+                text-decoration: none;
+                color: black;
+                font-size: 19px;
+                }
+                .footer input{
+                    width: 100%;
+                    height: 10px;
+                    padding: 7px 5px;
+                    margin: 5px 0;
+                }
 
+                .footer input:focus{
+                    outline: none;
+                }
 
-            .contact{
-                padding:100px 50px;
-                box-shadow: 20px 0 20px 0 whitesmoke;
-            }
-            .contact h1{
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                font-size: 50px;
-                color: rgb(5, 132, 182);
-                padding: 30px 0;
-                text-align: center;
-            }
-            .contact-col{
-                display: flex;
-                gap: 50px;
-                justify-content: space-evenly;
-            }
-            .address{
-                display: flex;
-                padding: 20px 0;
-                gap: 10px;
-            }
-            .address i{
-                background-color:rgb(5, 132, 182);
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-                align-items: center;
-                text-align: center;
-                font-size: 30px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                color: white;
-            }
-            .address h4{
-                color: rgb(5, 132, 182);
-                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                font-size: 25px;
-            }
-            .address p{
-                font-size: 15px;
-            }
-            .contact-col form input[type=text]{
-                width: 25vw;
-                height: 20px;
-                padding: 10px 5px;
-                margin: 5px 0;
-            }
-            .contact-col form input[name=subject], textarea{
-                width: 98%;
-            }
-            .footer{
-                display: flex;
-                padding: 50px;
-                background-color: whitesmoke;
-            }
-            .footer-row{
-                flex-basis: 31%;
-            }
-            .footer-row h2{
-                font-size: 25px;
-                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            }
-            .footer-row ul li{
-                /* list-style: none; */
-                padding: 5px;
-            }
-            .footer-row p{
-               padding: 10px 0;
-            }
-            .footer-row p span{
-                font-style: bold;
-                font-weight: 700;
-             }
-            .footer-row ul li a{
-               text-decoration: none;
-               color: black;
-               font-size: 19px;
-            }
-            .footer input{
-                width: 100%;
-                height: 10px;
-                padding: 7px 5px;
-                margin: 5px 0;
-            }
+                @media screen and (min-width:270px) and (max-width:500px){
+                    .footer{
+                       flex-direction: column;
+                    }
+                    .footer-row h2{
+                        font-size: 30px;
+                    }
+                    .footer-row{
+                        flex-basis: 31%;
+                        margin: 20px 0;
+                    }
+                }
 
-            .footer input:focus{
-                outline: none;
+                @media screen and (min-width:500px) and (max-width:970px){
+                    .footer-row{
+                        flex-basis: 35%;
+                    }
+                    .footer-row ul li{
+                        /* list-style: none; */
+                        padding: 5px;
+                        margin-left: 30px;
+                    }
             }
-
-@media(max-width:500px){
-    .sec1{
-        padding: 20px;
-        flex-direction: column;
-        gap: 10px;
-    }
-    .sec2{
-        padding: 20px;
-        flex-direction: column;
-        gap: 10px;
-    }
-    .sec3{
-        padding: 20px;
-        flex-direction: column;
-        gap: 10px;
-    }
-    .sec4{
-        padding: 20px;
-        flex-direction: column;
-        gap: 10px;
-    }
-    .sec5{
-        padding: 20px;
-        flex-direction: column;
-        gap: 10px;
-    }
-}
-
-
 
 /* Registration Section */
 
@@ -873,8 +1159,9 @@ box-shadow:10px 10px 0 0 rgb(5, 132, 182);
   }
 
   @media(max-width: 858px){
-    .rgnContainer{
+    .registrationContainer{
       padding: 50px;
+      width: 80%;
     }
     input[type=text], input[type=password]{
         width: 90%;
