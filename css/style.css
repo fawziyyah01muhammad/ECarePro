@@ -265,7 +265,14 @@ nav .fa{
         padding: 0 25px;
     }
     label h3{
-        font-size: 12px;
+        font-size: 19px;
+    }
+    label img{
+        width: 35px;
+        height: 35px;
+        border-radius: 10px;
+        box-shadow: 0 0 2px #5f5f5f, 0 0 0 5px
+         #ecf0f3, 8px 8px 15px #a7aaaf, -8px -8px 15px #fff;
     }
 }
 
@@ -320,7 +327,7 @@ nav .fa {
 }
 .sec1-text{
     width: 40%;
-  padding: 50px ;
+  padding: 100px ;
   color: white;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -331,7 +338,7 @@ nav .fa {
 }
 .sec1 p{
     /* font-family: 'Times New Roman', Times, serif; */
-    font-size: 15px;
+    font-size: 20px;
 }
 .button{
     width: 30%;
@@ -659,6 +666,8 @@ box-shadow:10px 10px 0 0 rgb(5, 132, 182);
 
 .dpt{
 	display: flex;
+    z-index: -6;
+
 }
 .dpt-col{
 	margin-left: 30px;
@@ -680,17 +689,23 @@ box-shadow:10px 10px 0 0 rgb(5, 132, 182);
 	flex: 1;
 	text-align:left;
 	display: block;
-    z-index: 6;
 }
 .dpt-col-links ul li{
 	list-style:none;                   
 	display:block;
-	padding: 20px 12px;
+	padding: 12px 12px;
 	position: relative;
 	margin-top:10px;
+    color:black;
+	padding: 10px 17px;
+	text-decoration: none;
+    border: 1px solid black;
+	background-color:transparent;
+	border-radius: 50%;
+	font-size: 20px;
 
 }
-.dpt-col-links ul li a{
+/* .dpt-col-links ul li a{
 	color:black;
 	padding: 10px 17px;
 	text-decoration: none;
@@ -698,8 +713,8 @@ box-shadow:10px 10px 0 0 rgb(5, 132, 182);
 	background-color:transparent;
 	border-radius: 50%;
 	font-size: 20px;
-}
-.dpt-col-links ul li a.choosen{
+} */
+.dpt-col-links ul li.choosen{
 	color:rgb(5, 132, 182);
 	padding: 10px 17px;
 	background-color:transparent;
@@ -714,7 +729,7 @@ box-shadow:10px 10px 0 0 rgb(5, 132, 182);
 .dpt-col h1{
 	font-size: 35px;
 	color: rgb(5, 132, 182);
-	margin-top: 20px;
+	margin-top: 0px;
 	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-weight: 300;
 	}
@@ -751,12 +766,11 @@ box-shadow:10px 10px 0 0 rgb(5, 132, 182);
             padding: 0 0 0 15px;
             text-align: left;
         }
-        .dpt-col-links ul li{
-            padding: 20px 2px;
-        
-        }
+
         .dpt-col img{
-            margin-left: 15px;
+            margin: 15px;
+            width: 100%;
+            height: 20vh;
         }
     }
 
@@ -958,11 +972,12 @@ box-shadow:10px 10px 0 0 rgb(5, 132, 182);
                 }
                 .contact-col form input[name=subject], textarea{
                     width: 98%;
+                    border: 1px solid lightgrey;
                 }
 
                 @media screen and (min-width:270px) and (max-width:500px){
                     .contact{
-                        padding:50px 20px;
+                        padding:30px 20px;
                         box-shadow: 20px 0 20px 0 whitesmoke;
                     }
                     .contact-col{
